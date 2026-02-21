@@ -3,18 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum – Benjamin Mörzinger</title>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="stylesheet" href="style.css">
+  <title>Impressum – Ben Mörzinger</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #1a1a1a;
+      background: #ffffff;
+      padding: 40px 20px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 40px;
+      font-size: 14px;
+      color: #666;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      color: #1a1a1a;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 40px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #444;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <nav class="nav-container">
-      <a href="/" class="nav-logo">Ben Mörzinger</a>
-    </nav>
-  </header>
+  <main>
+    <a href="/" class="back-link">← Zurück</a>
 
-  <main class="legal-page">
     <h1>Impressum</h1>
 
     <h2>Angaben gemäß § 5 ECG, § 14 UGB</h2>
@@ -26,32 +102,22 @@
     </p>
 
     <h2>Kontakt</h2>
-    <p>E-Mail: ben@moerzinger.eu</p>
+    <p>E-Mail: <a href="mailto:ben@moerzinger.eu">ben@moerzinger.eu</a></p>
 
     <h2>Unternehmensgegenstand</h2>
     <p>Unternehmensberatung / Fractional CXO Services</p>
 
-    <!-- Falls UID vorhanden:
-    <h2>UID-Nummer</h2>
-    <p>ATU[XXXXXXXX]</p>
-    -->
-
     <h2>Haftungsausschluss</h2>
+
     <h3>Haftung für Inhalte</h3>
     <p>Die Inhalte dieser Website wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte kann jedoch keine Gewähr übernommen werden.</p>
 
     <h3>Haftung für Links</h3>
     <p>Diese Website enthält Links zu externen Websites Dritter, auf deren Inhalte ich keinen Einfluss habe. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter verantwortlich.</p>
-  </main>
 
-  <footer>
-    <div class="container">
+    <footer>
       <p>&copy; 2026 Ben Mörzinger</p>
-      <div class="footer-links">
-        <a href="/impressum.html">Impressum</a>
-        <a href="/datenschutz.html">Datenschutz</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  </main>
 </body>
 </html>
